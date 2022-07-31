@@ -4,7 +4,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 
-
+load_dotenv()
 url = 'https://agsi.gie.eu/api'
 params = {
     "country": "de",
@@ -49,5 +49,4 @@ def create_diagram():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    load_dotenv()
     create_diagram()
